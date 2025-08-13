@@ -13,7 +13,7 @@ const Projects = () => {
       technologies: ['HTML5', 'CSS3', 'Vanilla JavaScript', 'Node.js', 'Express', 'PostgreSQL'],
       category: 'fullstack',
       github: 'https://github.com/Ghassan-Omar/Flavors-Table',
-      live: 'https://ghassan-omar.github.io/Coming-Soon/',
+      live: 'http://localhost:3001/',
       featured: true
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       technologies: ['React','css3', 'Node.js', 'Express'],
       category: 'fullstack',
       github: 'https://github.com/Ghassan-Omar/InstaBoard',
-      live: 'https://ghassan-omar.github.io/Coming-Soon/', 
+      live: 'http://localhost:5174/', 
       featured: true
     },
     {
