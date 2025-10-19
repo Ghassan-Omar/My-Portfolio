@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,35 +11,39 @@ const Header = () => {
       setScrolled(isScrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
 
   const navItems = [
-    { name: 'About', id: 'about' },
-    { name: 'Experience', id: 'experience' },
-    { name: 'Projects', id: 'projects' },
-    { name: 'Contact', id: 'contact' }
+    { name: "About", id: "about" },
+    { name: "Experience", id: "experience" },
+    { name: "Projects", id: "projects" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-slate-900/95 backdrop-blur-sm shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div 
+          <div
             className="text-2xl font-bold text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             &lt;Portfolio /&gt;
           </div>
@@ -57,7 +61,7 @@ const Header = () => {
               </button>
             ))}
             <a
-              href="/resume.pdf"
+              href="../Ghassan-Emran_Resume.doc"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 px-4 py-2 border border-emerald-400 text-emerald-400 rounded hover:bg-emerald-400/10 transition-all duration-200 text-sm font-medium"
@@ -116,7 +120,7 @@ const Header = () => {
                 </button>
               ))}
               <a
-                href="/resume.pdf"
+                href="../Ghassan-Emran_Resume.doc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 border border-emerald-400 text-emerald-400 rounded hover:bg-emerald-400/10 transition-all duration-200 text-center"
@@ -156,4 +160,3 @@ const Header = () => {
 };
 
 export default Header;
-

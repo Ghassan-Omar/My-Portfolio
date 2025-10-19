@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # أو الفرع الذي تعمل عليه
+      - main  # Trigger deployment on push to main branch
 
 jobs:
   build-and-deploy:

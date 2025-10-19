@@ -16,7 +16,6 @@ const Footer = () => {
           <div className="flex items-center justify-center space-x-1 text-slate-400 text-sm">
             <span>Made with love</span>
             <Heart size={16} className="text-red-400 fill-current" />
-            <span>using React & Tailwind CSS</span>
           </div>
           
           <p className="text-slate-500 text-xs">

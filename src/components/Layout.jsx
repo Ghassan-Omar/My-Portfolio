@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-300">
+    <div className="min-h-screen bg-cyan-500 text-slate-300">
       {/* Background Pattern */}
       <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16, 185, 129, 0.12),transparent_50%)]"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
-        {children}
-      </div>
+      <div className="relative z-10">{children}</div>
 
       {/* Side Social Links - Desktop Only */}
       <div className="hidden lg:block fixed left-8 bottom-0 z-20">
@@ -40,8 +38,18 @@ const Layout = ({ children }) => {
             href="mailto:ghassan.98@yahoo.com"
             className="text-slate-400 hover:text-emerald-400 hover:-translate-y-1 transition-all duration-200"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
             </svg>
           </a>
           <div className="w-px h-24 bg-slate-400"></div>
@@ -56,7 +64,7 @@ const Layout = ({ children }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-emerald-400 transition-colors duration-200 writing-mode-vertical text-sm tracking-widest"
-            style={{ writingMode: 'vertical-rl' }}
+            style={{ writingMode: "vertical-rl" }}
           >
             ghassan.98@yahoo.com
           </a>
@@ -68,4 +76,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
