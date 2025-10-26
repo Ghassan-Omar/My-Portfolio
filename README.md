@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React and Vite, showcasing full-stack development skills and projects. Features a sleek dark theme with emerald green accents, smooth animations, and an intuitive user experience.
 
-![Portfolio Preview](https://via.placeholder.com/1200x600/1F2937/10B981?text=Ghassan+Emran+-+Full+Stack+Developer)
+![Portfolio Preview]([https://via.placeholder.com/1200x600/1F2937/10B981?text=Ghassan+Emran+-+Full+Stack+Developer](https://my-portfolio-seven-rosy-58.vercel.app/))
 
 ## 📋 Table of Contents
 
